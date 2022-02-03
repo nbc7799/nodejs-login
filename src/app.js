@@ -20,7 +20,7 @@
 const express = require("express");
 const app = express();
 //라우팅가능하게 home에 담아줌
-const home = require("./routes/home");
+const home = require("../routes/home");
 
 //앱 세팅, 화면 뷰를 처리해주는 엔진 ejs, 많이사용하는 엔진,html과 비슷
 //ejs모듈 다운로드해야함

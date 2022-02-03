@@ -97,5 +97,8 @@ app.listen(PORT, () => {
 - dependencies는 의존하고 있는 패키지모듈들
 - devdependencies는 개발할때만 필요한것
 - 스크립트는 패키지에 사용하고싶은 명령어들,start로 서버실행명령어설정가능
+- lock.json은 좀더 명확한 버젼이 명시,
 
-## 11.
+## 11. 깃,깃허브 관리
+
+-
