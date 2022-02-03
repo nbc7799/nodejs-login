@@ -16,24 +16,17 @@
 // });
 
 //-------------------------------------------
-
+//모듈
 const express = require("express");
 const app = express();
+//라우팅
+const home = require("./routes/home");
 
 //앱 세팅, 화면 뷰를 처리해주는 엔진 ejs, 많이사용하는 엔진,html과 비슷
 //ejs모듈 다운로드해야함
 app.set("views", "./views");
 app.set("view engine", "ejs");
 
-//render에 index파일을 연결해주고 파일형식은 위에서 ejs라고 해줘서 따로 안써도됨
-app.get("/", (req, res) => {
-  res.render("home/index");
-});
+app.use("/", home); // use는 미들웨어를 등록해주는 메서드
 
-app.get("/login", (req, res) => {
-  res.render("home/login");
-});
-
-app.listen(7000, () => {
-  console.log("서버 가동");
-});
+module.exports = app;
