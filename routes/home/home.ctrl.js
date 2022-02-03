@@ -1,5 +1,6 @@
 "use strict";
 //기능을 수행하는 ctroller파일
+// home에있는 페이지들을 사용할수있게해줌
 const hello = (req, res) => {
   res.render("home/index");
 };
